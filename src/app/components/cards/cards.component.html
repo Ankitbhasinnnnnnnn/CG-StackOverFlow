@@ -2,14 +2,14 @@
 
     <div class="row">
   
-      <div class="col" *ngFor="let language of languages">
+      <div class="col my-3" *ngFor="let language of languages">
   
         <div class="card col" style="width: 18rem; height: 15rem">
   
           <ul class="list-group list-group-flush">
   
             <div class="d-flex justify-content-between">
-              <a href="">{{ language.name }}</a> 
+              <a class="border border-primary" href="" >{{ language.name }}</a> 
   
                 <img class="card-img-top" src="{{ language.logo }}" alt="Card image cap" class="img_size " >
             </div>
@@ -19,7 +19,7 @@
   
           <div class="card-body">
   
-            <p class="myDIV card-text">{{language.description |  slice:0:120}}...</p>
+            <p class="myDIV card-text">{{language.description |  slice:0:150}}...</p>
   
           </div>
   
