@@ -1,0 +1,47 @@
+<div class="wrapper">   
+    <div class="container main">
+        <div class="row">
+            <div class="col-md-6 signup-image">
+                <div class="text">
+                   <p><b>JOIN US</b></p>
+                </div>
+            </div>
+
+            <div class="col-md-6 right">
+               <img src="../../../assets/images/signup-images/cginfinitylogo.png">
+                <div class="input-box" formGroup="Signup">
+                    <header><b>Welcome to Stackoverflow Portal</b></header>
+                    <div class="input-field">
+                         <input #username  type="text" class="input" id="name" required autocomplete="off">
+                         <label for="name">Username</label>
+                        <!-- <span style="color: red;" *ngIf="!inputVal && inputVal.touched">This is required field</span> -->
+                    </div>
+
+                    <div class="input-field">
+                        <input #emails type="email" class="input" id="email" required autocomplete="off" >            
+                        <label for="email">Email</label>
+                        <!-- <span style="color: red;" >Enter the valid mail</span> -->                
+                    </div>
+                    <div class="input-field">
+                        <input #password type="password" class="input" id="password" required>
+                        <label for="password">Password</label>
+                        <!-- <div *ngIf="password.invalid && (password.dirty || password.touched)">
+                            <div *ngIf="password.errors?.['required']" style="color: red;">
+                                Password is required.
+                              </div>
+                              <div *ngIf="password.errors?.['minlength']">
+                                Password is required.
+                              </div>
+                        </div> -->
+                    </div>
+                    <div class="input-field">
+                        <input type="submit" class="submit" value="Sign Up " (click)="OnSignup(username,emails,password)">
+                    </div>
+                    <div class="signin">
+                        <span>Login if you have account before <a routerLink="/">Login here</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
