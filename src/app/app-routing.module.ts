@@ -4,9 +4,10 @@ import { LoginComponent } from './Components/login/login.component';
 import { VerifyComponent } from './verify/verify.component';
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
+  {path: '', redirectTo:'/login',pathMatch:'full'},
   {path: 'login', component: LoginComponent},
 {path: 'verify', component: VerifyComponent}
+
 ];
 
 @NgModule({

@@ -12,15 +12,15 @@
                  <div class="input-box">
                     <header><b>Welcome to Stackoverflow Portal</b></header>
                     <div class="input-field">
-                        <input type="text" class="input" id="email" required autocomplete="off">
+                        <input #email type="text" class="input" id="email" required autocomplete="off">
                         <label for="email">Email</label>
                     </div>
                     <div class="input-field">
-                        <input type="password" class="input" id="password" required>
+                        <input #password type="password" class="input" id="password" required>
                         <label for="password">Password</label>
                     </div>
                     <div class="input-field">
-                        <input type="submit" class="submit" value="Log In ">
+                        <input type="submit" class="submit" id="submit" (click)="LoginUser(email.value, password.value)"value="Log In ">
                         
                     </div>
                     <div class="signin">
