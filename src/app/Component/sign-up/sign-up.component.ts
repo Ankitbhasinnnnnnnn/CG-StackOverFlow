@@ -14,9 +14,14 @@ export class SignUpComponent {
   constructor(){
 
   }
-
+  
   ngOnInit(): void{
 
+  }
+ 
+ Validation(inputemail:any){
+  return( new FormControl('',[Validators.required,Validators.pattern("@cginfinity.com")])
+  )
   }
 
   OnSignup(username:any,emails:any,password:any){
@@ -24,8 +29,8 @@ export class SignUpComponent {
       username:username.value,
       emails:emails.value,
       password:password.value
-  }
-  console.log(signupDetails);
- }
-}
+    }
 
+     console.log(signupDetails);
+  }
+}
