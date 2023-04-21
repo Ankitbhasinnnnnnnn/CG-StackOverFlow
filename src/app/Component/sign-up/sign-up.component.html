@@ -13,18 +13,18 @@
                 <div class="input-box" formGroup="Signup">
                     <header><b>Welcome to Stackoverflow Portal</b></header>
                     <div class="input-field">
-                         <input #username  type="text" class="input" [(ngModel)]="inputVal" id="name" required autocomplete="off">
+                         <input #username  type="text" class="input" id="name" required autocomplete="off">
                          <label for="name">Username</label>
                         <!-- <span style="color: red;" *ngIf="!inputVal && inputVal.touched">This is required field</span> -->
                     </div>
 
                     <div class="input-field">
-                        <input #emails type="email" class="input" [(ngModel)]="inputemail" id="email" required autocomplete="off" >            
+                        <input #emails type="email" class="input" id="email" required autocomplete="off" >            
                         <label for="email">Email</label>
                         <!-- <span style="color: red;" >Enter the valid mail</span> -->                
                     </div>
                     <div class="input-field">
-                        <input #password="ngModel" type="password" class="input form-control"  [(ngModel)]="inputpass" id="password" required>
+                        <input #password type="password" class="input form-control" id="password" required>
                         <label for="password">Password</label>
                         <!-- <div *ngIf="password.invalid && (password.dirty || password.touched)">
                             <div *ngIf="password.errors?.['required']" style="color: red;">

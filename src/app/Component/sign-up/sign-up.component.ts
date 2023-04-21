@@ -14,7 +14,6 @@ export class SignUpComponent {
   constructor(){
 
   }
-  
   ngOnInit(): void{
 
   }
