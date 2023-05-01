@@ -1,34 +1,34 @@
-const language = {
+const LANGUAGE = {
     "languages": [
       {
           "name": "Python",
           "description": "Python is a high-level, interpreted programming language that emphasizes code readability and ease of use.",
-          "logo": "./assets/images/Python-Symbol.png"
+          "logo": "./assets/images/android.png"
       },
       {
           "name": "Java",
           "description": "Java is a general-purpose, object-oriented programming language designed to be platform-independent.",
-          "logo": "./assets/images/Java_programming_language_logo.svg.png"
+          "logo": "./assets/images/android.png"
       },
       {
           "name": "JavaScript",
           "description": "JavaScript is a lightweight, interpreted programming language designed primarily for client-side web development.",
-          "logo": "./assets/images/png-transparent-javascript-logo-html-javascript-logo-angle-text-rectangle-thumbnail.png"
+          "logo": "./assets/images/android.png"
       },
       {
           "name": "Go",
           "description": "Go was developed by Google in 2007 for APIs and web applications. Go has recently become one of the fastest-growing programming languages due to its simplicity, as well as its ability to handle multicore and networked systems and massive codebases.",
-          "logo": "./assets/images/go.png"
+          "logo": "./assets/images/android.png"
       },
       {
           "name": "Kotlin",
           "description": "Kotlin is used extensively for Android apps, web application, desktop application, and server-side application development. Kotlin was built to be better than Java, and people who use this language are convinced. Most of the Google applications are based on Kotlin.",
-          "logo": "./assets/images/kotlin.png"
+          "logo": "./assets/images/android.png"
       },
       {
           "name": "PHP",
           "description": "PHP is an open-source programming language created in 1990. Programmers mainly use PHP mainly to write server-side scripts. But developers can also use this language to write command-line scripts, and programmers with high-level PHP coding skills can also use it to develop desktop applications.",
-          "logo": "./assets/images/php.png"
+          "logo": "./assets/images/android.png"
       },
       {
           "name": "C#",
@@ -129,4 +129,4 @@ const language = {
      
   ]
   }
-  export default language;
+  export default LANGUAGE;
