@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TagsComponent } from './tags/tags.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { AskQuestionComponent } from './ask-question/ask-question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TagsComponent,
     NavbarComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    AskQuestionComponent
   ],
   imports: [
     BrowserModule,
