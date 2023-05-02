@@ -6,7 +6,7 @@
           <div class="tagSearch col-9"><p id="tagContentDescription">A tag is a keyword or label that categorizes your question with other, similar questions. Using the right tags 
             makes it easier for others to find and answer your question.</p>
           </div>
-          <div class="col-3">
+          <div class="col-md-3 col-lg-3 col-sm-3">
             <div class="input-group border border-secondary border-2 rounded-3">
               <span class="input-group-text border-0 bg-white"><i class="bi bi-search text-secondary"></i></span>
               <input type="text" [(ngModel)]="searchTerm" (input)="filterTags()" class="form-control border-0 shadow-none" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
@@ -19,8 +19,8 @@
     </div>
             
     <div class="tagsCard col-md-12">
-      <div class="row justify-content-between">
-        <div class="card cardTags col-lg-3 m-2 text-center" *ngFor="let languageDetail of filteredTags">
+      <div class="allTags">
+        <div class="card cardTags text-center" *ngFor="let languageDetail of filteredTags">
           <div class="card-header border-0 bg-white text-start d-flex justify-content-start">
             <div class="languageLogo me-3">
               <img src= {{languageDetail.logo}} class="">
