@@ -6,19 +6,18 @@ import { AppComponent } from './app.component';
 import { TagsComponent } from './tags/tags.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { LeaderboardCardComponent } from './leaderboard-card/leaderboard-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TagsComponent,
     NavbarComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    LeaderboardCardComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
