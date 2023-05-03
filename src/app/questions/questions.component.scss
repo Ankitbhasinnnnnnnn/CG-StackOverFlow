@@ -64,16 +64,27 @@
   order: 0;
   flex-grow: 0;
 }
-
-.scrollable-container {
-  overflow-y: scroll;
-  height: 80vh; /* Set a fixed height to the container */
+.arrow {
+  background: url("../../assets/images/Vectordown_arrow.png");
+  width: 10px;
+  height: 7px;
+  background-repeat: no-repeat;
+}
+.sort {
+  cursor: pointer;
+  width: 10rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  background-color: #e9eceb;
 }
 
-.fixed-container {
-  position: fixed;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 25%; /* Set a fixed width to the container */
-}
+// .sidebar {
+//   position: fixed;
+
+//   height: 100%;
+// }
+
+// .panel {
+//   height: 100%;
+//   overflow-y: scroll;
+// }
