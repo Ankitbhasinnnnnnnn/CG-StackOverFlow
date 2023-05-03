@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TagsComponent } from './tags/tags.component';
@@ -17,6 +17,12 @@ import { QuestionCardComponent } from './question-card/question-card.component';
     QuestionsComponent,
     LeaderboardCardComponent,
     QuestionCardComponent,
+    QuestionsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
