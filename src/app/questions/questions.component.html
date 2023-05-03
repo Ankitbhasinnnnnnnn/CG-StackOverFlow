@@ -1,15 +1,15 @@
 <app-navbar></app-navbar>
 
-<div class="container-lg my-5 questionsContent">
+<div class="container-fluid my-5 questionsContent">
   <div class="row justify-content-center">
-    <div class="col-sm-6 col col-lg-9 col-md-9">
+    <div class="col-sm-6 col col-lg-7 col-md-7 col-xl-7 col-xxl-8">
       <div class="d-flex align-items-center justify-content-between">
         <h4 class="text-dark">Questions</h4>
         <button type="button" class="btn btn-primary">Ask A Question</button>
       </div>
-      <div class="card">
+      <div class="cards" style="margin-top: 1rem">
         <div
-          class="card-body d-flex align-items-center justify-content-between"
+          class="card-body p-4 d-flex align-items-center justify-content-between"
         >
           <div class="form-group has-search" style="width: 60%">
             <span class="fa fa-search form-control-feedback"></span>
@@ -19,35 +19,22 @@
             class="btn-group"
             role="group"
             aria-label="Button group with nested dropdown"
-          >
-            <button type="button" class="btn btn-secondary">1</button>
-            <button type="button" class="btn btn-secondary">2</button>
-
-            <div class="btn-group" role="group">
-              <button
-                id="btnGroupDrop1"
-                type="button"
-                class="btn btn-secondary dropdown-toggle"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown
-              </button>
-              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                <a class="dropdown-item" href="#">Dropdown link</a>
-                <a class="dropdown-item" href="#">Dropdown link</a>
-              </div>
-            </div>
-          </div>
+          ></div>
         </div>
+        <hr style="color: #c5c1c1; margin: 0 !important" />
+        <question-card></question-card>
+        <question-card></question-card>
+        <question-card></question-card>
+        <question-card></question-card>
+        <question-card></question-card>
+        <question-card></question-card>
       </div>
     </div>
-    <div class="col-sm-6 col-lg-3 col-md-3">
+    <div class="col-sm-6 col-lg-3 col-md-3 col-xl-3 col-xxl-3">
       <h4 class="text-dark">Leaderboard</h4>
-      <div class="cards p-3">
+      <div class="cards">
         <div
-          class="card-body d-block align-items-center justify-content-between"
+          class="card-body d-block align-items-center justify-content-between p-4"
         >
           <div
             class="btn-group w-100"
@@ -59,6 +46,7 @@
               class="btn-check"
               name="btnradio"
               id="btnradio1"
+              (click)="value = 'votes'"
               autocomplete="off"
               checked
             />
@@ -72,21 +60,126 @@
               name="btnradio"
               id="btnradio2"
               autocomplete="off"
+              (click)="value = 'ans'"
             />
             <label class="btn btn-outline-primary" for="btnradio2"
               >Most Answers</label
             >
           </div>
         </div>
-
-        <app-leaderboard-card></app-leaderboard-card>
-        <app-leaderboard-card></app-leaderboard-card>
-        <app-leaderboard-card></app-leaderboard-card>
-        <app-leaderboard-card></app-leaderboard-card>
-        <app-leaderboard-card></app-leaderboard-card>
-        <app-leaderboard-card></app-leaderboard-card>
-        <app-leaderboard-card></app-leaderboard-card>
-        <app-leaderboard-card></app-leaderboard-card>
+        <div *ngIf="value == 'votes'" style="height: 80vh; overflow-y: scroll">
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector.png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector.png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector.png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector.png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector.png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector.png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector.png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector.png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector.png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector.png'"
+          ></app-leaderboard-card>
+          <div
+            class="d-flex align-items-center justify-content-between px-4 py-2 your-pos"
+          >
+            <div class="d-flex align-items-center justify-content-between">
+              <h6 class="text-dark">1</h6>
+              <div
+                class="d-flex align-items-center justify-content-between"
+                style="padding-left: 1.5rem"
+              >
+                <div class="avatar"></div>
+                <div class="d-block ml-2" style="padding-left: 0.6rem">
+                  <h6 class="text-dark">John Doe</h6>
+                  <p class="text-grey" style="margin: 0">Software Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="likes d-flex align-items-center justify-content-between"
+            >
+              <img src="../../assets/images/Vector.png" alt="" />
+              <p class="m-0">20</p>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="value == 'ans'" style="height: 80vh; overflow-y: scroll">
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <app-leaderboard-card
+            [srcValue]="'../../assets/images/Vector (1).png'"
+          ></app-leaderboard-card>
+          <div
+            class="d-flex align-items-center justify-content-between px-4 py-2 your-pos"
+          >
+            <div class="d-flex align-items-center justify-content-between">
+              <h6 class="text-dark">1</h6>
+              <div
+                class="d-flex align-items-center justify-content-between"
+                style="padding-left: 1.5rem"
+              >
+                <div class="avatar"></div>
+                <div class="d-block ml-2" style="padding-left: 0.6rem">
+                  <h6 class="text-dark">John Doe</h6>
+                  <p class="text-grey" style="margin: 0">Software Engineer</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="likes d-flex align-items-center justify-content-between"
+            >
+              <img src="../../assets/images/Vector (1).png" alt="" />
+              <p class="m-0">20</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

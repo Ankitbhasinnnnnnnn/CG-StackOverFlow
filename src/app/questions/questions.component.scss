@@ -33,3 +33,47 @@
 :host::ng-deep .btn-check:checked + .btn {
   background-color: #28519e !important;
 }
+
+//
+
+.your-pos {
+  border-left: 5px solid #28519e;
+  background: linear-gradient(
+      90.02deg,
+      rgba(255, 255, 255, 0) 10.49%,
+      rgba(127, 200, 248, 0.17) 78.1%
+    ),
+    linear-gradient(
+      90.02deg,
+      rgba(127, 200, 248, 0.17) 0.03%,
+      rgba(255, 255, 255, 0) 78.1%
+    );
+}
+
+.avatar {
+  /* Ellipse 6 */
+
+  width: 42px;
+  height: 42px;
+
+  background: url("../../assets/images/Ellipse\ 6.png");
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.scrollable-container {
+  overflow-y: scroll;
+  height: 80vh; /* Set a fixed height to the container */
+}
+
+.fixed-container {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 25%; /* Set a fixed width to the container */
+}

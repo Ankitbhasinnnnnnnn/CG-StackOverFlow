@@ -1,15 +1,20 @@
-<div class="d-flex align-items-center justify-content-between mt-2">
-  <h6 class="text-dark">1</h6>
+<div class="d-flex align-items-center justify-content-between mt-2 px-4 py-2">
   <div class="d-flex align-items-center justify-content-between">
-    <div class="avatar"></div>
-    <div class="d-block ml-2" style="padding-left: 0.6rem">
-      <h6 class="text-dark">John Doe</h6>
-      <p class="text-grey" style="margin: 0">Software Engineer</p>
+    <h6 class="text-dark">1</h6>
+    <div
+      class="d-flex align-items-center justify-content-between"
+      style="padding-left: 1.5rem"
+    >
+      <div class="avatar"></div>
+      <div class="d-block ml-2" style="padding-left: 0.6rem">
+        <h6 class="text-dark">John Doe</h6>
+        <p class="text-grey" style="margin: 0">Software Engineer</p>
+      </div>
     </div>
   </div>
   <div class="likes d-flex align-items-center justify-content-between">
-    <img src="../../assets/images/Vector.png" alt="" />
+    <img [src]="srcValue" alt="" />
     <p class="m-0">20</p>
   </div>
 </div>
-<hr style="color: #c5c1c1; margin: 1rem -16px" />
+<hr style="color: #c5c1c1; margin: 0 !important" />

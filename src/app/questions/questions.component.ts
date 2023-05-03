@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './questions.component.html',
   styleUrls: ['./questions.component.scss'],
 })
-export class QuestionsComponent {}
+export class QuestionsComponent {
+  value: string = 'votes';
+}
