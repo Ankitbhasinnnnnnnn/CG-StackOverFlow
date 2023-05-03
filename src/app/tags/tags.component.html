@@ -1,14 +1,43 @@
 <div class="tagsContent ms-4">
-    <div class="tagSectionName">
-
-    </div>
     <div class="tagsSectionDescription">
 
-        <div class="tagsDescription"><p>Tags</p></div>
-        <div class="tagSearch"><p>A tag is a keyword or label that categorizes your question with other, similar questions. Using the right tags 
-            makes it easier for others to find and answer your question.</p></div>
+        <div class="tagsDescription"><p class="fs-4 fw-bold">Tags</p></div>
+        <div class="searchSection d-flex col-12 justify-content-start">
+          <div class="tagSearch col-9"><p id="tagContentDescription">A tag is a keyword or label that categorizes your question with other, similar questions. Using the right tags 
+            makes it easier for others to find and answer your question.</p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-sm-3">
+            <div class="input-group border border-secondary border-2 rounded-3">
+              <span class="input-group-text border-0 bg-white"><i class="bi bi-search text-secondary"></i></span>
+              <input type="text" [(ngModel)]="searchTerm" (input)="filterTags()" class="form-control border-0 shadow-none" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+            </div>
+            
+          </div>
+          
+        </div>
+       
     </div>
-
-    <div class="tagsDetailsCards"></div>
-
+            
+    <div class="tagsCard col-md-12">
+      <div class="allTags">
+        <div class="card cardTags text-center" *ngFor="let languageDetail of filteredTags">
+          <div class="card-header border-0 bg-white text-start d-flex justify-content-start">
+            <div class="languageLogo me-3">
+              <img src= {{languageDetail.logo}} class="">
+            </div>
+            <div class="d-flex align-items-center justify-content-center">
+              <p class="languageName">{{languageDetail.name}}</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-text languageDescription">{{languageDetail.description}}</p>
+          </div>
+          <div class="card-footer text-muted text-start tagsQuestionsCountSection border-0 bg-white">
+            10 Questions
+          </div>
+        </div>
+      </div>
+    </div>
+    
 </div>
+

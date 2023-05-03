@@ -1,3 +1,55 @@
 .tagsContent{
     margin-top: 5rem;
 }
+.tagsSectionDescription, .tagsCard{
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+.tagsDescription{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #343435;
+}
+#tagContentDescription{
+    width: 80%;
+}
+.languageDescription{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 125.69%;
+}
+.tagsQuestionsCountSection{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 15px;
+
+color: #575757;
+}
+.cardTags{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.allTags{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+}
+.languageName{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+margin: 0 !important;
+// line-height: 21px;
+color: #343435;
+}
+
+  
