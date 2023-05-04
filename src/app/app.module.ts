@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { LeaderboardCardComponent } from './leaderboard-card/leaderboard-card.component';
 import { QuestionCardComponent } from './question-card/question-card.component';
+import { AskAQuestionComponent } from './ask-a-question/ask-a-question.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +18,15 @@ import { QuestionCardComponent } from './question-card/question-card.component';
     QuestionsComponent,
     LeaderboardCardComponent,
     QuestionCardComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    AskAQuestionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  imports: [BrowserModule, AppRoutingModule],
+ 
   providers: [],
   bootstrap: [AppComponent],
 })
