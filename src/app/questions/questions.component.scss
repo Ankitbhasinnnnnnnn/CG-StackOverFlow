@@ -5,6 +5,17 @@
 .cards {
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
+.hide-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollable {
+  height: 90vh;
+  overflow: auto;
+}
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
 
 .likes {
   /* Frame 26986 */

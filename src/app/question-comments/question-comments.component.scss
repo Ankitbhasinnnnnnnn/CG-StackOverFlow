@@ -1,3 +1,27 @@
+.container {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  height: 100vh;
+  gap: 1rem;
+}
+.questionsContent {
+  margin-top: 5rem !important;
+}
+
+.scrollable {
+  height: 90vh;
+  overflow: auto;
+}
+.scrollable::-webkit-scrollbar {
+  display: none;
+}
+.cards {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.cardss {
+  box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
 .chips {
   display: flex;
   flex-direction: row;
@@ -20,12 +44,6 @@
 .cards {
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
-.question-card-select {
-  cursor: pointer;
-}
-.question-card-select:hover {
-  background-color: rgb(211, 211, 211);
-}
 .avatar {
   /* Ellipse 6 */
 
@@ -46,4 +64,7 @@ p {
 
 ::ng-deep button.btn.btn-primary {
   background-color: #28519e !important;
+}
+.hide-scroll::-webkit-scrollbar {
+  display: none;
 }

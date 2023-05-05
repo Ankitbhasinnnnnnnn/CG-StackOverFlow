@@ -1,11 +1,15 @@
-<app-navbar></app-navbar>
-
 <div class="container-fluid my-5 questionsContent">
   <div class="row justify-content-center">
-    <div class="col-sm-6 col col-lg-7 col-md-7 col-xl-7 col-xxl-8">
+    <div class="col-sm-6 col col-lg-7 col-md-7 col-xl-7 col-xxl-8 scrollable">
       <div class="d-flex align-items-center justify-content-between">
         <h4 class="text-dark">Questions</h4>
-        <button type="button" routerLink="/ask-a-question" class="btn btn-primary">Ask A Question</button>
+        <button
+          type="button"
+          routerLink="/ask-a-question"
+          class="btn btn-primary"
+        >
+          Ask A Question
+        </button>
       </div>
       <div class="cards" style="margin-top: 1rem">
         <div
@@ -67,7 +71,11 @@
             >
           </div>
         </div>
-        <div *ngIf="value == 'votes'" style="height: 80vh; overflow-y: scroll">
+        <div
+          class="hide-scroll"
+          *ngIf="value == 'votes'"
+          style="height: 74vh; overflow-y: scroll"
+        >
           <app-leaderboard-card
             [srcValue]="'../../assets/images/Vector.png'"
           ></app-leaderboard-card>
@@ -122,7 +130,11 @@
             </div>
           </div>
         </div>
-        <div *ngIf="value == 'ans'" style="height: 80vh; overflow-y: scroll">
+        <div
+          class="hide-scroll"
+          *ngIf="value == 'ans'"
+          style="height: 74vh; overflow-y: scroll"
+        >
           <app-leaderboard-card
             [srcValue]="'../../assets/images/Vector (1).png'"
           ></app-leaderboard-card>
