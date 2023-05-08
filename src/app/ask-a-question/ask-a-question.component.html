@@ -1,18 +1,58 @@
 <app-navbar></app-navbar>
-<h3>Ask a Question</h3>
+<div class="container-fluid my-5 questionsContent">
+<div class="row ml-4">
+   <div class="col-sm-6 col col-lg-7 col-md-7 col-xl-7 col-xxl-8 scrollable">
+      <div class=" mt-4 j">
+         <p style="margin: 0 !important">
+            Questions &nbsp;&nbsp;/&nbsp;&nbsp;Ask a Question
+         </p>
+         <h3 class="text mt-3 ">Ask a Question</h3>
+      </div>
+      <div class="card mt-4 w-100 ml-3">
+         <div class="card-body">
+            <h5 class="card-title mb-2">Title</h5>
+            <p>Be specific and imagine you’re asking a question to another person</p>
+            <input type="text" class="form-control" placeholder="Steps for" />
+            <button
+               type="button"
+               routerLink="/ask-a-question"
+               class="btn mt-3 rounded-start btn-primary"
+               >
+            Next
+            </button>
+         </div>
+      </div>
+      <div class="card mt-4  w-100 ml-3">
+        <div class="card-body">
+           <h5 class="card-title mb-2">What are the details of the problems?</h5>
+           <p>Be specific and imagine you’re asking a question to another person</p>
+           <input type="text" class="form-control" placeholder="Steps for" />
+           <button
+              type="button"
+              routerLink="/ask-a-question"
+              class="btn mt-3 rounded-start btn-primary"
+              >
+           Next
+           </button>
+        </div>
+     </div>
+      <div class="col-sm-6 col-lg-3 col-md-3 col-xl-3 col-xxl-3">
+        
+      </div>
+   </div>
+   <div class="col-sm-4 d-flex align-items-center col col-lg-4 col-md-4 col-xl-4 col-xxl-4 scrollable">
+    <div class="card d-flex">
+      <div class="card-header">
+        Writing a good question
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          Now that you’re ready to post your question, read through it from start to finish. Does it make sense?
 
-<div class="card w-75 ml-3">
-  <div class="card-body">
-    <h5 class="card-title mb-2">Title</h5>
-    <p>Be specific and imagine you’re asking a question to another person</p>
-    <input type="text" class="form-control" placeholder="Steps for" />
-
-    <button
-      type="button"
-      routerLink="/ask-a-question"
-      class="btn mt-3 rounded-start btn-primary"
-    >
-      Next
-    </button>
-  </div>
+Add any details you missed and read through it again. Now is a good time to make sure that your title still describes the problem!
+        </blockquote>
+      </div>
+    </div>
+    
+ </div>
 </div>
