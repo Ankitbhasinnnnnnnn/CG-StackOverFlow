@@ -1,0 +1,76 @@
+.main-div {
+  background-color: #3c3c3c;
+  height: inherit;
+}
+p {
+  margin: 0 !important;
+}
+.landing-text1,
+.landing-text2,
+.landing-text3 {
+  font-size: 8rem;
+  font-weight: 900;
+}
+.landing-text1 {
+  background: linear-gradient(180deg, #ffb81c 0%, #ffffff 245.58%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  //   display: inline-block;
+}
+.landing-text2 {
+  background: linear-gradient(180deg, #ffb81c -84.23%, #fffcf5 111.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  //   display: inline-block;
+}
+.landing-text3 {
+  background: linear-gradient(0deg, #feffe6, #feffe6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  //   display: inline-block;
+}
+.main-text {
+  font-size: 3rem;
+  color: whitesmoke;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  text-align: center;
+}
+.val1 {
+  font-size: 3rem;
+  color: #ffb81c;
+}
+.val2 {
+  font-size: 3rem;
+  color: #ffb81c;
+}
+
+.card1,
+.card2,
+.card3 {
+  border-radius: 0.5rem;
+
+  padding: 0.8rem;
+  width: 23.25rem;
+  height: 17rem;
+  background-color: #2c2c2c;
+}
+.avatar {
+  border-radius: 50%;
+  background-color: #ffb81c;
+  width: 5rem;
+  height: 5rem;
+}
+.avatar img {
+  padding: 0.8rem;
+}
+
+.title {
+  color: whitesmoke;
+}
+.body {
+  color: rgb(206, 205, 205);
+}
+.title {
+  font-weight: bold;
+}
