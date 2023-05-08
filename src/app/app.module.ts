@@ -10,6 +10,7 @@ import { LeaderboardCardComponent } from './leaderboard-card/leaderboard-card.co
 import { QuestionCardComponent } from './question-card/question-card.component';
 import { AskAQuestionComponent } from './ask-a-question/ask-a-question.component';
 import { QuestionCommentsComponent } from './question-comments/question-comments.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { QuestionCommentsComponent } from './question-comments/question-comments
     QuestionCardComponent,
     QuestionsComponent,
     AskAQuestionComponent,
-    QuestionCommentsComponent
+    QuestionCommentsComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
