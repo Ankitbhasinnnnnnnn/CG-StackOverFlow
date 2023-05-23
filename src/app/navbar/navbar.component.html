@@ -1,30 +1,51 @@
-  <nav class="navbar fixed-top navbar-white">
-    <div class="col-12 d-flex">
-        <div class="logo col-2 logoDiv">
-            <img src="../../assets/images/cglogo.png" alt="" style="max-width: 100%; height: auto;">
-        </div>
-        <div class="navBtns col-8 ms-3">
-            <!-- button for the questions page toggle -->
+<nav class="navbar fixed-top navbar-white">
+  <div class="col-12 d-flex">
+     <div class="logo col-2 logoDiv">
+        <img src="../../assets/images/cglogo.png" alt="" style="max-width: 100%; height: auto;">
+     </div>
+     <div class="col-9 d-flex ms-3 justify-content-between">
+     <div class="navBtns ">
+        <!-- button for the questions page toggle -->
         <button
-         type="button" 
-         class="btn btn-success navBtn me-2" 
-         id="questionBtn"
-         routerLink="/questions"
-         routerLinkActive="active-button"
-         >
-         Questions
+           type="button" 
+           class="btn btn-success navBtn me-2" 
+           id="questionBtn"
+           routerLink="/questions"
+           routerLinkActive="active-button"
+           >
+        Questions
         </button>
         <!-- button for tags page toggle -->
         <button
-         type="button" 
-         class="btn btn-success navBtn" 
-         id="tagsBtn" 
-         routerLink="/tags"
-         routerLinkActive="active-button">
-         Tags
+           type="button" 
+           class="btn btn-success navBtn" 
+           id="tagsBtn" 
+           routerLink="/tags"
+           routerLinkActive="active-button">
+        Tags
         </button>
-        </div>
-        <!-- <div class="vr"></div> -->
+        
+     </div>
+     <div class="d-flex
+     ">
+     <button
+     type="button" 
+     class="btn btn-success LoginBtn " 
+     id="Loginbtn" 
+     routerLink="/Login"
+     routerLinkActive="active-button">
+  Login
+  </button>
+  <button
+     type="button" 
+     class="btn btn-success signupbtn ms-2" 
+     id="SignBtn" 
+     routerLink="/tags"
+     routerLinkActive="active-button">
+  Sign Up
+  </button>
+</div>
     </div>
-    
-  </nav>
+     <!-- <div class="vr"></div> -->
+  </div>
+</nav>
