@@ -11,6 +11,7 @@ import { QuestionCardComponent } from './question-card/question-card.component';
 import { AskAQuestionComponent } from './ask-a-question/ask-a-question.component';
 import { QuestionCommentsComponent } from './question-comments/question-comments.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     QuestionsComponent,
     AskAQuestionComponent,
     QuestionCommentsComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
