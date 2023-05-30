@@ -7,7 +7,7 @@ import { QuestionCommentsComponent } from './question-comments/question-comments
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login/login.component';
 const routes: Routes = [
-  { path: '', component: LandingPageComponent },
+  { path: '', component: QuestionCommentsComponent },
   { path: 'tags', component: TagsComponent },
   { path: 'questions', component: QuestionsComponent },
   { path: 'ask-a-question', component: AskAQuestionComponent },
