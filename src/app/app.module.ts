@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +12,9 @@ import { QuestionCardComponent } from './question-card/question-card.component';
 import { AskAQuestionComponent } from './ask-a-question/ask-a-question.component';
 import { QuestionCommentsComponent } from './question-comments/question-comments.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { EditorComponent } from './editor/editor.component';
+import { ElipsispipePipe } from './elipsispipe.pipe';
+import { AvatarComponent } from './components/avatar/avatar.component';
 
 @NgModule({
   declarations: [
@@ -23,14 +27,13 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     QuestionsComponent,
     AskAQuestionComponent,
     QuestionCommentsComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    EditorComponent,
+    ElipsispipePipe,
+    AvatarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
- 
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+
   providers: [],
   bootstrap: [AppComponent],
 })

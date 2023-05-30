@@ -1,4 +1,61 @@
-.good-question {
-    background: #28519E17;
+.tb-m-4 {
+  margin-top: 4rem;
+}
+.tb-m-1 {
+  margin-top: 1rem;
+}
+.tb-m-2 {
+  margin-top: 2rem;
+}
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.page-hierarchy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 13rem;
+}
+.chevron-right {
+  width: 6px;
+  height: 10px;
+}
+.cards {
+  padding: 1rem;
+  width: 100%;
+  height: fit-content;
+  box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  border: 1px solid #e9eceb;
+}
+.side-card {
+  //   box-shadow: 0px 0px 18px -3px rgba(0, 0, 0, 0.1);
+  background: rgba(40, 81, 158, 0.09);
+  border-radius: 4px;
+  padding: 0.7rem;
+}
+.input {
+  padding: 0.5rem;
+  background: #ffffff;
+  /* Secondary/Light Gray */
+  width: 100%;
+  border: 1px solid #e9eceb;
+  border-radius: 4px;
+}
+.next-btn {
+  width: fit-content;
+  color: whitesmoke;
+  border: none;
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+  background-color: #28519e;
+}
+.disabled-div {
+  opacity: 0.5; /* Reduce opacity to indicate disabled state */
+  pointer-events: none; /* Disable pointer events */
 
+  /* Add any other disabled styles you want */
 }
