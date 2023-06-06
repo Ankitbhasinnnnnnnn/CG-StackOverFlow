@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 export class LoginComponent {
 
   public LoginCreditianls: object = {};
+  route: any;
   LoginUser(email:string, password:string) {
     debugger;
     this.LoginCreditianls = {
@@ -16,11 +18,12 @@ export class LoginComponent {
     }
    
   }
-  forgetPassword(){
-    // this.route.navigate(['']) // this is for the forget password to na igate to that page
+  forgotPassword(){
+   
   }
 
-  redirectToRegisterPage(){
+  signUp(){
+   
     
   }
 }
