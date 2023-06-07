@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +18,9 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { VerificationComponent } from './verification/verification.component';
 import { NewPasswordComponent } from './new-password/new-password.component';
 import { PasswordChangedComponent } from './password-changed/password-changed.component';
+import { EditorComponent } from './editor/editor.component';
+import { ElipsispipePipe } from './elipsispipe.pipe';
+import { AvatarComponent } from './components/avatar/avatar.component';
 
 @NgModule({
   declarations: [
@@ -35,14 +39,13 @@ import { PasswordChangedComponent } from './password-changed/password-changed.co
     SignUpComponent,
     VerificationComponent,
     NewPasswordComponent,
-    PasswordChangedComponent
+    PasswordChangedComponent,
+    EditorComponent,
+    ElipsispipePipe,
+    AvatarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
- 
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+
   providers: [],
   bootstrap: [AppComponent],
 })
