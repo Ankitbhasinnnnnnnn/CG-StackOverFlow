@@ -1,39 +1,42 @@
-<div class="flex justify-content-center align-items-center">
+<div
+
+style="height: 100vh;"
+ class="d-flex justify-content-center align-items-center">
   <div
-    class="md:col-8 sm:col-10 lg:col-8 flex justify-content-center align-items-center flex-wrap main-div"
+  
+    class=" d-flex justify-content-center align-items-center flex-wrap main-div"
   >
   
-    <div class="md:col-6 sm:col-12 d-flex flex-column justify-content-between  left">
-        
-  
-    </div>
-    
-    <div class="md:col-6 sm:col-12  p-5 align-items-center justify-content-center  right">
-      <h2 class="text-login font-bold">Login</h2>
-        <div  class=" w-100 div1 mt-5 p-0">
-        
-          <div class="flex-colum ">
-            <!-- for email input  -->
-          <div class="emailLabel mt-4  w-100 text-start text-lg p-0 pt-5">
-            <label for="emailInput">Email ID</label>
-             <input #email id="emailInput" type="email" aria-describedby="username1-help" pInputText class="w-100 px-3"/>
+    <div class="row-xs-6  row-sm-6 col-md-6 col-lg-6  d-flex flex-column left" >
+     
+      <img class="img-responsive" src="..\..\assets\images\Frame 27059.svg">   
+   </div>
+ 
+  <div class="flex-column  px-1 py-5 flex-wrap align-items-center justify-content-center right">
+   <div class="container  d-flex flex-column flex-wrap align-items-center gap-2">
+     <div class="d-flex flex-column align-items-left">
+       <div class="px-2 py-4">
+       <h1 >Login</h1>
+       </div>
+       <div class="row text-wrap px-3 py-2 ">
+        <label for="emailInput" ><b>Email ID</b></label>
+         <input  #password id="passwordInput" type="password" aria-describedby="username1-help" placeholder="Enter your Email ID" pInputText class="w-100" />
+         </div>
+         <div class="row text-left px-3 text-wrap  py-2">
+         <label for="PasswordInput" ><b>Password</b></label>
+            <input  #password id="passwordInput" type="password" aria-describedby="username1-help" placeholder="Enter your Password" pInputText class="w-100"/>
            </div>
+         
+         <div class=" btn btn-warning btn-block px-3 py-2" >Login</div>
+     
+           <a class="row pt-2 text-primary text-wrap text-decoration-none offset-3 " (click)="forgotPassword()" routerLink="/forgot-password">Forgot Password?</a>
+           <a class="row  text-primary text-wrap text-decoration-none offset-2"  (click)="signUp()" routerLink="/sign-up">Sign Up if you are a first User</a>
 
-          <!-- for password input -->
-           <div class="emailLabel w-100 text-start pt-4 pb-5">
-            <label for="passwordInput" class="text-base">Password</label>
-             <input  #password id="passwordInput" type="password" aria-describedby="username1-help" pInputText class="w-100 px-3"/>
-           </div>
-           
-           <button type="button"  class="btn btn-success text-black border border-light LoginBtn w-100 ms-2 mt-3" id="Loginbtn" routerLink="/Login" routerLinkActive="active-button"> Login </button>
-            <div class="d-flex flex-column ">
-           <a id="forgetPassword" (click)="forgetPassword()" routerLink="/forgot-password" class="loginText block pt-3">Forgot password? </a>
-            <a id="firstTimeUser" (click)="redirectToRegisterPage()" class="loginText block pt-4">Sign Up if you are a first time user  </a>
-          </div>
-          </div>
-          
-        </div>
         
-      </div>
-    </div>
-  </div>
+       
+
+       
+     </div>
+       </div>
+ </div>
+  

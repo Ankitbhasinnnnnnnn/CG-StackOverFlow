@@ -1,0 +1,44 @@
+<div
+
+style="height: 100vh;"
+ class="d-flex justify-content-center align-items-center">
+  <div
+  
+    class=" d-flex justify-content-center align-items-center flex-wrap main-div"
+  >
+  
+    <div class="row-xs-6  row-sm-6 col-md-6 col-lg-6  d-flex flex-column left" >
+     
+      <img src="..\..\assets\images\Frame 27059.svg" style="overflow: hidden;background-size: 100%;background-size: cover;"> 
+   
+   </div>
+ 
+  <div class="flex-column  px-4 py-5 flex-wrap align-items-center justify-content-center right">
+   <div class="container  d-flex flex-column flex-wrap align-items-center gap-2">
+     <div class="d-flex flex-column align-items-left">
+       <div class="px-5 py-3">
+       <h3 >Enter Code</h3>
+       </div>
+       <div class="row text-wrap text-left px-4 py-2 ">
+       <p> <i class="bi bi-arrow-left"></i>email@gmail.com</p>
+       <br>
+       <p>Please type the Six digit code we have sent on your Microsoft account.</p>
+       <div class="row text-wrap px-5 py-2 ">
+         <input  #code id="codeInput" type="password" placeholder="code" aria-describedby="username1-help"  pInputText class="w-100"/>
+         </div>
+         <div class=" btn btn-warning btn-block px-5  py-2 mt-2 " style="width:90%" (click)="Verify()" routerLink="/new-password">Verify</div>
+         <a class="row  text-primary text-wrap text-decoration-none pt-2 offset-3 " href="#">Use Another Account</a>
+
+
+
+         </div>
+          
+
+        
+       
+
+       
+     </div>
+       </div>
+ </div>
+  

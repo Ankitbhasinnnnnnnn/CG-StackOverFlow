@@ -12,6 +12,11 @@ import { AskAQuestionComponent } from './ask-a-question/ask-a-question.component
 import { QuestionCommentsComponent } from './question-comments/question-comments.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './login/login.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { VerificationComponent } from './verification/verification.component';
+import { NewPasswordComponent } from './new-password/new-password.component';
+import { PasswordChangedComponent } from './password-changed/password-changed.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { LoginComponent } from './login/login.component';
     AskAQuestionComponent,
     QuestionCommentsComponent,
     LandingPageComponent,
-    LoginComponent
+    LoginComponent,
+    ForgotPasswordComponent,
+    SignUpComponent,
+    VerificationComponent,
+    NewPasswordComponent,
+    PasswordChangedComponent
   ],
   imports: [
     BrowserModule,
