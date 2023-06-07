@@ -1,11 +1,21 @@
 <nav class="navbar fixed-top navbar-white">
-  <div class="col-12 d-flex">
+  <div class="col-12 d-flex align-items-center justify-content-center">
     <div class="logo col-2 logoDiv">
-      <img
-        src="../../assets/images/cglogo.png"
-        alt=""
-        style="max-width: 100%; height: auto"
-      />
+      <ng-container *ngIf="!isLandingPage()">
+        <img
+          src="../../assets/images/cglogo.png"
+          alt=""
+          style="max-width: 100%; height: auto"
+        />
+      </ng-container>
+
+      <ng-container *ngIf="isLandingPage()">
+        <img
+          src="../../assets/images/CG-Logo 2.png"
+          alt=""
+          style="max-width: 100%; height: auto"
+        />
+      </ng-container>
     </div>
     <div class="col-9 d-flex ms-3 justify-content-between">
       <div class="navBtns">

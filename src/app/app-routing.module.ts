@@ -12,7 +12,7 @@ import { VerificationComponent } from './verification/verification.component';
 import { NewPasswordComponent } from './new-password/new-password.component';
 import { PasswordChangedComponent } from './password-changed/password-changed.component';
 const routes: Routes = [
-  { path: '', component: QuestionCommentsComponent },
+  { path: '', component: LandingPageComponent },
   { path: 'tags', component: TagsComponent },
   { path: 'questions', component: QuestionsComponent },
   { path: 'ask-a-question', component: AskAQuestionComponent },
