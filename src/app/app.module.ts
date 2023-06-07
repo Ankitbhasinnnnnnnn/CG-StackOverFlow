@@ -21,7 +21,10 @@ import { PasswordChangedComponent } from './password-changed/password-changed.co
 import { EditorComponent } from './editor/editor.component';
 import { ElipsispipePipe } from './elipsispipe.pipe';
 import { AvatarComponent } from './components/avatar/avatar.component';
-
+import { AngularEditorModule } from '@kolkov/angular-editor';
+import { HttpClientModule} from '@angular/common/http';
+import { CKEditorModule } from 'ng2-ckeditor';
+import { QuillModule } from 'ngx-quill'
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +47,7 @@ import { AvatarComponent } from './components/avatar/avatar.component';
     ElipsispipePipe,
     AvatarComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, AngularEditorModule, HttpClientModule,CKEditorModule,QuillModule.forRoot()],
 
   providers: [],
   bootstrap: [AppComponent],
