@@ -37,9 +37,12 @@
           <p>
             Be specific and imagine you’re asking a question to another person
           </p>
-          <p>Here Goes the Editor</p>
-
-          <button class="next-btn" (click)="isDisabled2 = false">Next</button>
+         <div class="card-body">
+            <quill-editor [style]="{'height': '200px'}"></quill-editor>
+         </div>
+          <div class="card-footer">
+            <button class="next-btn" (click)="isDisabled2 = false">Next</button>
+          </div>
         </div>
         <div
           class="cards d-flex flex-column gap-2"
