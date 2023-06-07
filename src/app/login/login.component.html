@@ -1,0 +1,42 @@
+<div
+
+style="height: 100vh;"
+ class="d-flex justify-content-center align-items-center">
+  <div
+  
+    class=" d-flex justify-content-center align-items-center flex-wrap main-div"
+  >
+  
+    <div class="row-xs-6  row-sm-6 col-md-6 col-lg-6  d-flex flex-column left" >
+     
+      <img class="img-responsive" src="..\..\assets\images\Frame 27059.svg">   
+   </div>
+ 
+  <div class="flex-column  px-1 py-5 flex-wrap align-items-center justify-content-center right">
+   <div class="container  d-flex flex-column flex-wrap align-items-center gap-2">
+     <div class="d-flex flex-column align-items-left">
+       <div class="px-2 py-4">
+       <h1 >Login</h1>
+       </div>
+       <div class="row text-wrap px-3 py-2 ">
+        <label for="emailInput" ><b>Email ID</b></label>
+         <input  #password id="passwordInput" type="password" aria-describedby="username1-help" placeholder="Enter your Email ID" pInputText class="w-100" />
+         </div>
+         <div class="row text-left px-3 text-wrap  py-2">
+         <label for="PasswordInput" ><b>Password</b></label>
+            <input  #password id="passwordInput" type="password" aria-describedby="username1-help" placeholder="Enter your Password" pInputText class="w-100"/>
+           </div>
+         
+         <div class=" btn btn-warning btn-block px-3 py-2" >Login</div>
+     
+           <a class="row pt-2 text-primary text-wrap text-decoration-none offset-3 " (click)="forgotPassword()" routerLink="/forgot-password">Forgot Password?</a>
+           <a class="row  text-primary text-wrap text-decoration-none offset-2"  (click)="signUp()" routerLink="/sign-up">Sign Up if you are a first User</a>
+
+        
+       
+
+       
+     </div>
+       </div>
+ </div>
+  
