@@ -1,6 +1,7 @@
 <nav class="navbar fixed-top navbar-white">
   <div class="col-12 d-flex align-items-center justify-content-center">
     <div class="logo col-2 logoDiv">
+      
       <ng-container *ngIf="!isLandingPage()">
         <img
           src="../../assets/images/cglogo.png"
@@ -19,8 +20,21 @@
     </div>
     <div class="col-9 d-flex ms-3 justify-content-between">
       <div class="navBtns">
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label [ngClass]=" flag ? 'secondary' : 'checked'"  class="btn btn-success navBtn me-2 ">
+            <input  class="d-none checked" type="radio" ng-model="isChecked" value="1" name="options" id="option1"  autocomplete="off" checked routerLink="/questions"
+            routerLinkActive="active-button">  Questions
+          </label>
+         
+          <label [ngClass]=" flag ? 'checked' : 'secondary'"  class="btn btn-success navBtn me-2">
+            <input class="d-none" type="radio" name="options" id="option3"  autocomplete="off" routerLink="/tags"
+            routerLinkActive="active-button">  Tags
+          </label>
+        </div>
+
         <!-- button for the questions page toggle -->
-        <button
+        <!-- <button
           type="button"
           class="btn btn-success navBtn me-2"
           id="questionBtn"
@@ -29,7 +43,7 @@
         >
           Questions
         </button>
-        <!-- button for tags page toggle -->
+       
         <button
           type="button"
           class="btn btn-success navBtn"
@@ -38,7 +52,7 @@
           routerLinkActive="active-button"
         >
           Tags
-        </button>
+        </button> -->
       </div>
       <div class="d-flex">
         <button

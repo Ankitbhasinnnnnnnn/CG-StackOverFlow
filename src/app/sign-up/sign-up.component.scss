@@ -1,5 +1,5 @@
 *{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   #form-card {
     height:40px;
@@ -120,10 +120,9 @@ h3{
   //new CSS starts here
   
   
-  .left,
+
   .right {
-    height: 65vh;
-    width:60vh;
+  
     box-shadow: 0px 0px 13px 6px rgba(0, 0, 0, 0.1);
    
    
@@ -223,3 +222,17 @@ h3{
   overflow: hidden;
 }
 
+//
+.sign-up{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+}
+.form-div {
+  padding-top: 3.4rem;
+  padding-bottom: 5.8rem;
+}
+.sign-up-creditanls {
+  font-weight: 400 !important;
+}

@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<app-navbar  [isChecked] = "false"></app-navbar>
 <div class="tagsContent ms-4">
   <div class="tagsSectionDescription">
     <div class="tagsDescription"><p class="fs-4 fw-bold">Tags</p></div>
@@ -39,7 +39,7 @@
           class="card-header border-0 bg-white text-start d-flex justify-content-start"
         >
           <div
-            class="image-div"
+            class="image-div m-2"
             [ngStyle]="{
               'background-image': 'url(' + languageDetail.logo + ')'
             }"
