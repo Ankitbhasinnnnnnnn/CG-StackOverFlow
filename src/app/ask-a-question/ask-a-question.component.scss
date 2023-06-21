@@ -1,3 +1,8 @@
+* {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
 @import '~quill/dist/quill.bubble.css'; 
 .tb-m-4 {
   margin-top: 4rem;
@@ -8,15 +13,13 @@
 .tb-m-2 {
   margin-top: 2rem;
 }
-p {
-  margin: 0 !important;
-  padding: 0 !important;
-}
+
 .page-hierarchy {
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 13rem;
+  width: 12rem;
 }
 .chevron-right {
   width: 6px;
@@ -59,4 +62,12 @@ p {
   pointer-events: none; /* Disable pointer events */
 
   /* Add any other disabled styles you want */
+}
+//
+.breadcrumb {
+  font-size: 14px ;
+}
+.title {
+  font-weight: 600;
+  font-size:  20px ;
 }

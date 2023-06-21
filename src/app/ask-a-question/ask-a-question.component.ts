@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
+import { Component,OnInit,ViewChild } from '@angular/core';
 import { AngularEditorConfig } from '@kolkov/angular-editor';
 @Component({
   selector: 'app-ask-a-question',
   templateUrl: './ask-a-question.component.html',
   styleUrls: ['./ask-a-question.component.scss'],
 })
-export class AskAQuestionComponent {
+export class AskAQuestionComponent implements OnInit {
+  @ViewChild('name') inputName:any; 
+  @ViewChild('tags') tags:any; 
   ckeditorContent: any;
   isDisabled1: boolean = true;
-  isDisabled2: boolean = true;
+  isDisabled2: boolean = false;
   isDisabled3: boolean = true;
   editorConfig: AngularEditorConfig = {
     editable: true,
@@ -55,4 +57,18 @@ export class AskAQuestionComponent {
     ]
 };
 
+ngOnInit() {
+
+  
+}
+onKeypressEvent(event:any) {
+  let title = this.inputName.nativeElement.value;
+  title.length>0 ? this.isDisabled1 = false : this.isDisabled1 = true;
+
+}
+onKeypressEventFortags(event:any) {
+  let title = this.tags.nativeElement.value;
+  title.length>0 ? this.isDisabled3 = false : this.isDisabled3 = true;
+
+}
 }

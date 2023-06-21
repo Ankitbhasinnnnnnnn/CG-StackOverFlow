@@ -8,7 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
 export class NavbarComponent implements OnInit{
 
   constructor(private router: Router) {
-    debugger;
+  
     console.log(this.router.url);
   }
 
@@ -30,7 +30,7 @@ export class NavbarComponent implements OnInit{
   @Input('isChecked') isCheck: boolean = false;
   isLandingPage(): boolean {
     // Replace 'landing' with the route path of your landing page
-    console.log(this.router.url);
+    
     if (this.router.url.toString() == '/') {
       this.isLanding = true;
     } else {

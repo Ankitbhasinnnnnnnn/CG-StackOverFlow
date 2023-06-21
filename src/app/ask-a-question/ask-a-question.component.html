@@ -6,27 +6,27 @@
   <div class="row justify-content-center">
     <div class="col-sm-6 col col-lg-7 col-md-7 col-xl-7 col-xxl-8 scrollable">
       <div class="d-flex align-items-center justify-content-between">
-        <div class="page-hierarchy">
-          <p class="text-dark">Questions</p>
+        <div class=" page-hierarchy">
+          <p class="breadcrumb text-dark">Questions</p>
           <img
             class="chevron-right"
             src="../../assets/chevron-right.png"
             alt=""
           />
-          <p class="text-dark">Ask a Question</p>
+          <p class=" breadcrumb text-dark">Ask a Question</p>
         </div>
       </div>
-      <h4 class="tb-m-1">Ask a Question</h4>
+      <h4 class="title tb-m-1">Ask a Question</h4>
       <!-- Cards container -->
       <div class="d-flex flex-column gap-3">
         <div class="cards d-flex flex-column gap-3" style="margin-top: 1rem">
           <div>
-            <p style="font-size: 1rem; font-weight: bold">Title</p>
+            <p style="font-size: 15px;" class="fw-bolder">Title</p>
             <p>
               Be specific and imagine you’re asking a question to another person
             </p>
-            <input class="input" type="text" placeholder="steps for" />
-            <button class="next-btn" (click)="isDisabled1 = false">Next</button>
+            <input class="input" type="text" placeholder="steps for" #name (keyup)="onKeypressEvent($event)"/>
+            
           </div>
         </div>
         <div
@@ -40,9 +40,7 @@
          <div class="card-body">
             <quill-editor [style]="{'height': '200px'}"></quill-editor>
          </div>
-          <div class="card-footer">
-            <button class="next-btn" (click)="isDisabled2 = false">Next</button>
-          </div>
+          
         </div>
         <div
           class="cards d-flex flex-column gap-2"
@@ -53,8 +51,8 @@
             Add up to 5 tags to describe what your question is about. Start
             typing to see suggestions
           </p>
-          <input class="input" type="text" placeholder="Add tags" />
-          <button class="next-btn" (click)="isDisabled3 = false">Next</button>
+          <input class="input" type="text" placeholder="Add tags"   #tags (keyup)="onKeypressEventFortags($event)" />
+         
         </div>
         <div
           class="cards d-flex flex-column gap-2"
@@ -78,9 +76,9 @@
           Writing a good question
         </p>
         <p>
-          Writing a good question Writing a good question Writing a good
-          question Writing a good question Writing a good question Writing a
-          good question
+          You’re ready to ask a programming-related question and this form will help guide you through the process.
+
+         
         </p>
         <p style="font-weight: bold">Steps for</p>
 
