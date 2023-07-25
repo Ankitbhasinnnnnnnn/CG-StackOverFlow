@@ -2,6 +2,8 @@
     font-family: 'Lato', sans-serif;
   }
   #form-card {
+    height:40px;
+    width:30px;
     box-shadow: 0px 0px 13px 6px rgba(0, 0, 0, 0.1);
     border-radius: 1.5rem;
   }
@@ -13,37 +15,41 @@
   // }
   .main-div {
     height: 100vh;
-    justify-content: center;
+    
+    justify-content:center ;
+    text-align:left;
+    
     display: flex;
+    
+  }
  
+h3{
+  font-family: 'Roboto';
+}
+
+ 
+  
+  
+ 
+  
+  
+ 
+  
+  
+  
+  #signUpBtn{
+    margin-top: 1px;
   }
-  #emailInput{
-    color: black !important;
-  }
-  .login {
-    display: flex;
+  #forgetPassword{
     justify-content: center;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
   }
-  
-  
-  .form-check-input:checked {
-    background-color: #ffb81c;
-    border-color: #ffb81c;
-  }
-  
-  input:focus {
-    border: none !important;
-    outline: none !important;
-  }
-  a {
-    text-decoration-color: black;
-    color: black;
-  }
-  
-  .border-bottom-login {
-    border-bottom: 1.5px solid black !important;
-    outline: none !important;
-    border-radius: 0;
+  #firstTimeUser{
+    justify-content: center;
+     display: flex;
+     text-decoration: none;
   }
   
   .form-control:focus {
@@ -113,19 +119,19 @@
   //ends here ----
   //new CSS starts here
   
-  #left {
-    background-color: red;
-  }
+  
   .left,
   .right {
-    height: 60vh;
+    height: 65vh;
+    width:60vh;
     box-shadow: 0px 0px 13px 6px rgba(0, 0, 0, 0.1);
   
    
    
   }
+  
   .left {
-    background-color: #28519E;
+    
     border-bottom-left-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     background-image: '../../assets/images/Login/Quesion.svg';
@@ -138,11 +144,9 @@
   .main-div {
     border-radius: 0.5rem;
   }
-  img {
-    padding: 2rem;
-    width: 100%;
-    height: 100%;
-  }
+
+ 
+
   #right-img{
     padding:0 !important;
     width: 86%;
@@ -179,13 +183,10 @@
   
   
   
-  :host::ng-deep .p-button {
-  display: flex;
-  justify-content: center;
-  }
+
   
   #alreadyMemberText{
-    color:#28519E;
+    color:#072763;
   
   }
   #signUpBtn{
@@ -201,15 +202,26 @@
     cursor: pointer;
   }
 
+  
+  
+
+
+
 //   
 .main-line {
     color: #FFB81C;
     float: left;
 
 }
-.text-login {
- float: left;
+
+:root{
+  --main-bg:#e91e63;
 }
-.LoginBtn {
-  background-color: #FFB81C;
+
+.banner {
+  background: url("../../assets/images/Frame\ 27059.svg");
+
+  background-size: cover;
+  overflow: hidden;
 }
+

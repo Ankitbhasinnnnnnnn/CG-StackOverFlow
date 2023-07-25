@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<app-navbar ></app-navbar>
 <div class="container-fluid my-5 questionsContent">
   <div class="row justify-content-center">
     <div class="col-sm-6 col col-lg-7 col-md-7 col-xl-7 col-xxl-8 scrollable">
@@ -8,7 +8,7 @@
             Questions &nbsp;&nbsp;/&nbsp;&nbsp;How to get value of python dict
           </p>
           <div class="d-flex align-items-center justify-content-between mt-4">
-            <h4 class="text-dark">How to get value of python dict?</h4>
+            <h4 class=" question-main-line text-dark">How to get value of python dict?</h4>
             <button
               type="button"
               routerLink="/ask-a-question"
@@ -17,7 +17,7 @@
               Ask A Question
             </button>
           </div>
-          <div class="cardss mt-2">
+          <div class="cards mt-2">
             <div
               class="mt-2 p-4"
               style="display: flex; flex-direction: column; gap: 1rem"
@@ -27,6 +27,83 @@
                 <p class="chips" style="margin: 0 !important">dictionary</p>
                 <p class="chips" style="margin: 0 !important">key_value</p>
               </div>
+              <div class="d-flex align-items-center justify-content-start">
+                <div
+                  class="d-flex align-items-center justify-content-between gap-3"
+                >
+                  <div class="avatar"></div>
+                  <div class="d-block ml-2">
+                    <p style="font-weight: bold; font-size: 14px">John Doe</p>
+                    <p class="question-asked-time">Asked 2 min ago</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h4 class="question-heading" style="color: #28519e">
+                  How to get value of python dict? How to get value of python
+                  dict?
+                </h4>
+                <p style="margin: 0 !important; line-height: 2rem">
+                  I was trying to give myself a role when executing a "/"
+                  command, and ive tryed many solutions from stackoverflow but
+                  none of them work for discord.js v14. Im pretty new to js.
+                  tryed: const guild = interaction.guild const role =
+                  guild.roles.cache.find(role => role.name === 'Admin'); var
+                  dcuser = interaction.user.id dcuser.roles.add(role) Got:
+                  TypeError: Cannot read properties of undefined (reading 'add')
+                </p>
+              </div>
+              <hr style="color: #c5c1c1; margin: 0 !important" />
+              <div
+                class="d-flex align-items-center justify-content-between gap-3 pt-3"
+              >
+                <div
+                  class="d-flex align-items-center justify-content-between gap-3"
+                >
+                  <img src="../../assets/images/Vectorthumb_up.png" alt="" />
+
+                  <img src="../../assets/images/Vectorcomments.png" alt="" />
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between gap-3"
+                >
+                  <img src="../../assets/images/Vectoreye.png" alt="" />
+                  <p style="margin: 0 !important; font-weight: 500">16 Views</p>
+                  <img src="../../assets/images/Vectorcomment.png" alt="" />
+                  <p style="margin: 0 !important; font-weight: 500">
+                    10 Answers
+                  </p>
+                  <img src="../../assets/images/Vectorlike.png" alt="" />
+                  <p style="margin: 0 !important; font-weight: 500">8 Votes</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card-body p-2 d-flex align-items-center justify-content-between"
+            >
+              <!-- <div class="form-group has-search" style="width: 100%">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Search" />
+              </div> -->
+              <input class="input" type="text" placeholder="Add comment" />
+            </div>
+          </div>
+          <div class="mt-2 p-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <p style="font-weight: bold">Answers: 02</p>
+              <div
+                class="highest-votes d-flex align-items-center justify-content-between"
+              >
+                <p>Highest Votes</p>
+                <img src="../../assets/chevron-down.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="cards mt-2">
+            <div
+              class="mt-2 p-4"
+              style="display: flex; flex-direction: column; gap: 1rem"
+            >
               <div class="d-flex align-items-center justify-content-start">
                 <div
                   class="d-flex align-items-center justify-content-between gap-3"
@@ -53,6 +130,7 @@
                   TypeError: Cannot read properties of undefined (reading 'add')
                 </p>
               </div>
+              <hr style="color: #c5c1c1; margin: 0 !important" />
               <div
                 class="d-flex align-items-center justify-content-between gap-3 pt-3"
               >
@@ -77,15 +155,6 @@
                 </div>
               </div>
             </div>
-            <div
-              class="card-body p-4 d-flex align-items-center justify-content-between"
-            >
-              <div class="form-group has-search" style="width: 100%">
-                <span class="fa fa-search form-control-feedback"></span>
-                <input type="text" class="form-control" placeholder="Search" />
-              </div>
-            </div>
-            <hr style="color: #c5c1c1; margin: 0 !important" />
           </div>
         </div>
         <!-- <question-card></question-card>
@@ -103,7 +172,7 @@
       <h4 class="text-dark">Related Questions</h4>
 
       <div class="cards">
-        <div class="p-3" style="display: flex; flex-direction: column">
+        <div class="p-3 pointer" style="display: flex; flex-direction: column">
           <div>
             <p style="color: #28519e; font-size: 1.2rem; font-weight: bold">
               How can i output query results in the CSV format? Explain.
@@ -117,7 +186,7 @@
           </div>
         </div>
         <hr style="color: #c5c1c1; margin: 0 !important" />
-        <div class="p-3" style="display: flex; flex-direction: column">
+        <div class="p-3 pointer" style="display: flex; flex-direction: column">
           <div>
             <p style="color: #28519e; font-size: 1.2rem; font-weight: bold">
               How can i output query results in the CSV format? Explain.
@@ -131,7 +200,7 @@
           </div>
         </div>
         <hr style="color: #c5c1c1; margin: 0 !important" />
-        <div class="p-3" style="display: flex; flex-direction: column">
+        <div class="p-3 pointer" style="display: flex; flex-direction: column">
           <div>
             <p style="color: #28519e; font-size: 1.2rem; font-weight: bold">
               How can i output query results in the CSV format? Explain.
